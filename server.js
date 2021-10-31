@@ -13,7 +13,7 @@ app.use(koaBody({json: true}));
 
 app.use(async (ctx, next) => {
 	// CORS для фронтенда, который на git-hub.
-	ctx.response.set('Access-Control-Allow-Origin', 'https://mksinc.github.io/RA-hw.-6-Lifecycle-http.-1-Watches.-2-CRUD.-3-Chat');
+	ctx.response.set('Access-Control-Allow-Origin', 'https://mksinc.github.io');
 	ctx.response.set('Access-Control-Allow-Methods', 'DELETE');
 
 	await next();
